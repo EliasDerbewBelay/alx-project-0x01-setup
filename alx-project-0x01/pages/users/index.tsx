@@ -11,7 +11,7 @@ const Users: React.FC<UserProps[]> = ({ posts }) => {
         <h1 className="font-bold text-5xl">Users</h1>
         <div className="grid grid-cols-3 gap-4">
           {posts.map((user) => (
-            <UserCard key={user.id} user={user} />
+            <UserCard key={user.id} {...user} />
           ))}
         </div>
       </main>
