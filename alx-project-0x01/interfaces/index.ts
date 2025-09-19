@@ -29,3 +29,14 @@ export interface UserProps {
   };
 }
 
+export interface PostData {
+  userId: number;
+  id?: number;
+  title: string;
+  body: string;
+}
+
+export interface PostModalProps {
+  onSubmit: (post: PostData) => void;
+  onClose: () => void;
+}
